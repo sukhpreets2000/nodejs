@@ -5,6 +5,7 @@ import contactRoutes from "./routes/contactRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
 import forgotResetRoutes from "./routes/forgot-resetRoutes.js";
 import verifyEmailRoute from "./routes/verifyEmailRoute.js";
+import userProfile from "./routes/userProfile.js";
 import cors from "cors";
 dotenv.config();
 const port = process.env.PORT || 5200
@@ -20,6 +21,7 @@ app.use('/api/contacts', contactRoutes)
 app.use('/api', userRoutes)
 app.use('/api', forgotResetRoutes)
 app.use('/api', verifyEmailRoute)
+app.use('/api', userProfile)
 
 
 app.get("/", (req, res) => {
