@@ -17,10 +17,6 @@ const Register = async (req, res) => {
 
         const hashedPassword = await bcrypt.hash(password, 10)
 
-        // Generate JWT token
-
-        // const token = jwt.sign({ email }, 'secret')
-
         //generate verification token 
 
         const verificationToken = crypto.randomBytes(32).toString("hex")

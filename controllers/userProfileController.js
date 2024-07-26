@@ -4,6 +4,7 @@ const userProfileController = async (req, res) => {
         const { firstname, lastname, email, mobilenumber, age, gender } = req.body;
 
         const useremail = req.user
+        console.log(useremail)
 
         const user = await Users.findOne({ email: useremail.email })
 

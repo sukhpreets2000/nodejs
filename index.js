@@ -8,6 +8,7 @@ import verifyEmailRoute from "./routes/verifyEmailRoute.js";
 import userProfile from "./routes/userProfile.js";
 import cors from "cors";
 dotenv.config();
+
 const port = process.env.PORT || 5200
 const app = express()
 
